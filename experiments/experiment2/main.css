@@ -1,0 +1,35 @@
+
+.dragHandle {
+    background-color: dodgerblue;
+    min-width: 20px;
+    cursor: move;
+    flex-grow: 0;
+}
+
+.flex-container {
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    display: flex;
+    border: 1px solid dodgerblue;
+    resize: horizontal;
+    overflow: auto;
+    min-width: 120px;
+}
+
+input {
+    border: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-grow: 1;
+    min-width: 20px;
+    padding: 4px;
+}
+
+span {
+    color: darkgray;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 4px;
+    padding-right: 15px;
+}
