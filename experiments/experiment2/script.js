@@ -14,6 +14,7 @@ function dragElement(elmnt) {
     }
 
     function dragMouseDown(e) {
+        setFocus();
         e = e || window.event;
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
@@ -39,6 +40,7 @@ function dragElement(elmnt) {
         /* stop moving when mouse button is released:*/
         document.onmouseup = null;
         document.onmousemove = null;
+        unsetFocus();
     }
 }
 
@@ -47,3 +49,17 @@ function updat() {
 }
 
 document.getElementById("content").onchange = updat;
+
+function setFocus() {
+    document.getElementById("mydiv").style.borderColor = "green";
+    document.getElementById("mydivheader").style.backgroundColor = "green";
+}
+
+document.getElementById("content").onfocus = setFocus;
+
+function unsetFocus() {
+    document.getElementById("mydiv").style.borderColor = "dodgerblue";
+    document.getElementById("mydivheader").style.backgroundColor = "dodgerblue";
+}
+
+document.getElementById("content").onblur = unsetFocus;

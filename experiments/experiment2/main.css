@@ -6,6 +6,11 @@
     flex-grow: 0;
 }
 
+.selected {
+    background-color: green;
+    border-color: green;
+}
+
 .flex-container {
     position: fixed;
     top: 100px;
