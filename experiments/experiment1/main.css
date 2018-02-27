@@ -3,3 +3,7 @@
     top: 100px;
     left: 400px;
 }
+
+input {
+    border: none;
+}
