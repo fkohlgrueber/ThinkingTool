@@ -63,4 +63,9 @@ This document contains draft content/ideas.
 - Use documentation as an abstraction and make it visible. 
 - Description of general function definition vs. description of function applied in specific context. e.g. for a sum function: "returns the sum of a list of integers" vs. "return total distance of all trips"
 
+## Guided dependency upgrading
+
+- Automatic update of backwards-incompatible changes by defining transformation rules (e.g. function a(...) in old version becomes function b(...) in new version).
+- Manual review of added functionality. If a new version of a library implements functionality that has been implemented manually in own package, one can use the libraries version instead.
+
 ## ...
