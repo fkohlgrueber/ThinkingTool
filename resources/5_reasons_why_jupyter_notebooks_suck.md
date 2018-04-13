@@ -1,6 +1,6 @@
 # 5 reasons why jupyter notebooks suck
 
-(Source)[https://medium.com/@alexander.mueller/5-reasons-why-jupyter-notebooks-suck-4dc201e27086]
+[Source](https://medium.com/@alexander.mueller/5-reasons-why-jupyter-notebooks-suck-4dc201e27086)
 
 jupyter notebook pain points:
 
